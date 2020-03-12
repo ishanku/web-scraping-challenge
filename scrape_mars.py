@@ -1,7 +1,5 @@
 import pandas as pd
-import matplotlib as plt
 from bs4 import BeautifulSoup as bs
-import requests
 import splinter as sp
 from splinter import Browser
 from bs4 import BeautifulSoup
@@ -55,7 +53,7 @@ class scrapebot():
         # browser.visit(MarsImageURL)
         # Mhtml=browser.html
         # msoup=bs(Mhtml, 'lxml')
-        msoup = scrapebot.getsoup(MarsImageURL,"1")
+        msoup = scrapebot.getsoup(MarsImageURL,"2")
         ImageURL = msoup.find("img", class_="thumb")["src"]
         featured_image_url = "https://www.jpl.nasa.gov" + ImageURL
         return featured_image_url
@@ -98,7 +96,7 @@ class scrapebot():
         #
         # html = browser.html
         # mhsoup = bs(html, "html.parser")
-        mhsoup = scrapebot.getsoup(marsimage,"1")
+        mhsoup = scrapebot.getsoup(marsimage,"3")
         hemisphere_image_urls = []
 
         result = mhsoup.find("div", class_ = "result-list" )
@@ -108,14 +106,16 @@ class scrapebot():
         for h in hemispheres:
             title= h.h3.text.replace("Enhanced","")
             subpage="https://astrogeology.usgs.gov" + h.a["href"]
-            browser.visit(subpage)
-            time.sleep(2)
-            subhtml=browser.html
+            subbrowser = Browser("chrome", **executable_path, headless=False)
+            subbrowser.visit(subpage)
+            time.sleep(3)
+            subhtml=subbrowser.html
             subsoup=bs(subhtml,"html5lib")
             getdownloads=subsoup.find('div',class_='downloads')
             #print(getdownloads)
             fullimage=getdownloads.find("a")["href"]
             hemisphere_image_urls.append({"title":title,"img_url":fullimage})
+            subbrowser.quit()
         return hemisphere_image_urls
 
     def scrape():
@@ -130,5 +130,4 @@ class scrapebot():
             'timestamp' : dt.datetime.now()
             }
         browser.quit()
-        print(all_data)
         return all_data

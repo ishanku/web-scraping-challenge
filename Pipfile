@@ -7,6 +7,14 @@ verify_ssl = true
 
 [packages]
 flask = "*"
+pandas = "*"
+pymongo = "*"
+bs4 = "*"
+splinter = "*"
+lxml = "*"
+html5lib = "*"
+html-parser = "*"
+flask-pymongo = "*"
 
 [requires]
 python_version = "3.7"
