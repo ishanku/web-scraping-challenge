@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="SSiva Thangaraj">
+    <title>Mars Data</title>
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+
+        .imgcontainer {
+        position: relative;
+        text-align: center;
+        color: white;
+        }
+        /* Top right text */
+        .top-right {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      /* stylelint-disable selector-list-comma-newline-after */
+
+      .blog-header {
+        line-height: 1;
+        border-bottom: 1px solid #e5e5e5;
+      }
+
+      .blog-header-logo {
+        font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+        font-size: 2.25rem;
+      }
+
+      .blog-header-logo:hover {
+        text-decoration: none;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+      }
+
+      .display-4 {
+        font-size: 2.5rem;
+      }
+      @media (min-width: 768px) {
+        .display-4 {
+          font-size: 3rem;
+        }
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .nav-scroller .nav-link {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        font-size: .875rem;
+      }
+
+      .card-img-right {
+        height: 100%;
+        border-radius: 0 3px 3px 0;
+      }
+
+      .flex-auto {
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+      }
+
+      .h-250 { height: 250px; }
+      @media (min-width: 768px) {
+        .h-md-250 { height: 250px; }
+      }
+
+      /* Pagination */
+      .blog-pagination {
+        margin-bottom: 4rem;
+      }
+      .blog-pagination > .btn {
+        border-radius: 2rem;
+      }
+
+      /*
+       * Blog posts
+       */
+      .blog-post {
+        margin-bottom: 4rem;
+      }
+      .blog-post-title {
+        margin-bottom: .25rem;
+        font-size: 2.5rem;
+      }
+      .blog-post-meta {
+        margin-bottom: 1.25rem;
+        color: #999;
+      }
+
+      /*
+       * Footer
+       */
+      .blog-footer {
+        padding: 2.5rem 0;
+        color: #999;
+        text-align: center;
+        background-color: #f9f9f9;
+        border-top: .05rem solid #e5e5e5;
+      }
+      .blog-footer p:last-child {
+        margin-bottom: 0;
+      }
+
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <!-- Custom styles for this template
+    <link href="blog.css" rel="stylesheet">-->
+  </head>
+  <body>
+    <div class="container">
+  <header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="text-muted" href="#">Follow</a>
+      </div>
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-dark" href="#">Mission to Mars</a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="text-muted" href="#" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+        </a>
+        <a class="btn btn-sm btn-outline-secondary" href="mailto:ishanku@gmail.com">Email me</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 text-muted" href="#">Nasa News</a>
+      <a class="p-2 text-muted" href="#">Mars Featured Image</a>
+      <a class="p-2 text-muted" href="#">Mars Weather Tweets</a>
+      <a class="p-2 text-muted" href="#">Mars Facts</a>
+      <a class="p-2 text-muted" href="#">Mars hemisphere</a>
+    </nav>
+  </div>
+
+  <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 font-italic">Mars Featured Image</h1>
+      <p class="lead my-3">From Nasa.gov</p>
+      <img src="{{ mars.featured_image_url }}" alt="Mars Featured Image">
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">Mars Tweet</strong>
+          <h3 class="mb-0">Latest Weather</h3>
+          <div class="mb-1 text-muted">{{ mars.timestamp }}</div>
+          <p class="card-text mb-auto">{{ mars.mars_weather }}.</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Tweets</text></svg>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">Nasa News</strong>
+          <h3 class="mb-0">{{ mars.news_title }}</h3>
+          <div class="mb-1 text-muted">{{ mars.timestamp }}</div>
+          <p class="mb-auto">{{ mars.news_p }}</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Nasa News</text></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main role="main" class="container">
+  <div class="row">
+      <div class="col-md-8 blog-main">
+        <h3 class="pb-4 mb-4 font-italic border-bottom">
+          From the Mars Hemispheres
+        </h3>
+
+        <div class="blog-post">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+          {% for h in mars.hemisphere_image_urls %}
+        <li class="nav-item">
+          {% if loop.index==1 %}
+          <a class="nav-link active" id="{{ loop.index }}-tab" data-toggle="tab" href="#h{{ loop.index }}" role="tab" aria-controls="h{{ loop.index }}" aria-selected="true">
+            {{ h.title }}</a>
+          {% else %}
+          <a class="nav-link" id="{{ loop.index }}-tab" data-toggle="tab" href="#h{{ loop.index }}" role="tab" aria-controls="h{{ loop.index }}" aria-selected="false">
+            {{ h.title }}</a>
+          {% endif %}
+        </li>
+
+        {% endfor %}
+      </ul>
+      <div class="tab-content" id="myTabContent">
+
+        {% for h in mars.hemisphere_image_urls %}
+        {% if loop.index==1 %}
+        <div class="tab-pane fade show active" id="h{{ loop.index }}" role="tabpanel" aria-labelledby="{{ loop.index }}-tab">
+          <div class="imgcontainer">
+          <img src="{{ h.img_url }}" class="d-block w-100" alt="{{ h.title }}">
+          <div class="top-right">{{ h.title }}</div>
+          </div>
+        </div>
+        {% else %}
+        <div class="tab-pane fade" id="h{{ loop.index }}" role="tabpanel" aria-labelledby="{{ loop.index }}-tab">
+          <div class="imgcontainer">
+          <img src="{{ h.img_url }}" class="d-block w-100" alt="{{ h.title }}">
+          <div class="top-right">{{ h.title }}</div>
+          </div>
+        </div>
+        {% endif %}
+
+        {% endfor %}
+      </div>
+      </div><!-- /.blog-post -->
+
+      <div class="blog-post">
+        <h2 class="blog-post-title">My Scrape Bot</h2>
+        <p class="blog-post-meta">March, 2020 by <a href="mailto:ishanku@gmail.com">SSiva</a></p>
+
+        <p>How to Scrape</p>
+        <ul>
+          <li>To add a new scrape use "/addscrape"</li>
+          <li>To update a scrape use "/scrape"</li>
+          <li>To view archives, click the links in the archive list</li>
+        </ul>
+      </div><!-- /.blog-post -->
+
+
+
+    </div><!-- /.blog-main -->
+
+    <aside class="col-md-4 blog-sidebar">
+      <div class="p-4 mb-3 bg-light rounded">
+        <h4 class="font-italic">Mars Facts</h4>
+        <p class="mb-0">{{ mars.mars_facts | safe }}</p>
+      </div>
+
+      <div class="p-4">
+        <h4 class="font-italic">Archives</h4>
+
+        <ol class="list-unstyled mb-0">
+          {% for a in allmars %}
+          <li><a href="/archives/{{ a.timestamp }}">{{ a.timestamp }}</a></li>
+          {% endfor %}
+        </ol>
+      </div>
+
+      <div class="p-4">
+        <h4 class="font-italic">Elsewhere</h4>
+        <ol class="list-unstyled">
+          <li><a href="https://github.com/ishanku">GitHub</a></li>
+          <li><a href="https://twitter.com/Rojavaasam">Twitter</a></li>
+          <!--<li><a href="#">Facebook</a></li>-->
+        </ol>
+      </div>
+    </aside><!-- /.blog-sidebar -->
+
+  </div><!-- /.row -->
+
+</main><!-- /.container -->
+
+<footer class="blog-footer">
+  <p>&copy; GeorgiaTech Education</p>
+  <p>
+    <a href="#">Back to top</a>
+  </p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
